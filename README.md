@@ -59,10 +59,12 @@ JavaScript syntax and build checks were run. Browser visual verification was una
 
 The **Names on/off** switch keeps a screen-facing name above each container, including containers behind others. It defaults to on and is saved separately from configuration in browser storage. Off-screen containers are clipped; dense labels may overlap at overview zoom, so zoom in or focus a group for detail.
 
-Choose **Load WorkZone** in the editor, then **Build network**, to use the supplied 48-container diagram. The focus inspector resolves known components by image and name, distinguishing duplicate `client`, `office`, and `init` entries. It adds a role, context, topology, and links to the official 2026.1 documentation. Inferred mappings are explicitly marked. Unknown entries retain their own text and receive only a generic group-based role. No operational state or resource usage is fabricated.
+Choose **Restore default** in the editor, then **Build network**, to use the supplied 48-container diagram. The focus inspector resolves known components by image and name, distinguishing duplicate `client`, `office`, and `init` entries. It adds a role, context, topology, and links to the official 2026.1 documentation. Inferred mappings are explicitly marked. Unknown entries retain their own text and receive only a generic group-based role. No operational state or resource usage is fabricated.
 
 The original diagram remains unchanged. Version notes flag its removed Teams container, replaced Office init container, deprecated OAuth2 authentication, and the PDF init platform change. Reference content is curated in `src/workzone-info.js` from [KMD WorkZone 2026.1](https://docs.workzone.kmd.net/2026_1/en-us/Content/Home.htm); it is not fetched at runtime.
 
 ## Brand asset
 
 The white KMD / An NEC Company SVG is sourced from [KMD’s official press materials](https://www.kmd.net/press/press-photos), [original SVG](https://www.kmd.net/media/c5egqffi/kmd-logo-white-with-nec-rgb.svg). The logo remains the property of KMD.
+
+The supplied 48-container WorkZone configuration is the startup default. Saved custom configurations still take precedence; an unchanged saved legacy demo is migrated to WorkZone. **Restore default** stages the default in the editor; choose **Build network** to apply and save it.
