@@ -1,4 +1,4 @@
-# Containerizer / FLUX
+# Containerizer / KMD WorkZone
 
 A Three.js spatial explorer that turns an array of containers into a living particle network. Containers are procedural 3D shipping-container models with corrugated sides, doors, luminous points and animated scan bands. No downloaded model is required.
 
@@ -62,3 +62,7 @@ The **Names on/off** switch keeps a screen-facing name above each container, inc
 Choose **Load WorkZone** in the editor, then **Build network**, to use the supplied 48-container diagram. The focus inspector resolves known components by image and name, distinguishing duplicate `client`, `office`, and `init` entries. It adds a role, context, topology, and links to the official 2026.1 documentation. Inferred mappings are explicitly marked. Unknown entries retain their own text and receive only a generic group-based role. No operational state or resource usage is fabricated.
 
 The original diagram remains unchanged. Version notes flag its removed Teams container, replaced Office init container, deprecated OAuth2 authentication, and the PDF init platform change. Reference content is curated in `src/workzone-info.js` from [KMD WorkZone 2026.1](https://docs.workzone.kmd.net/2026_1/en-us/Content/Home.htm); it is not fetched at runtime.
+
+## Brand asset
+
+The white KMD / An NEC Company SVG is sourced from [KMD’s official press materials](https://www.kmd.net/press/press-photos), [original SVG](https://www.kmd.net/media/c5egqffi/kmd-logo-white-with-nec-rgb.svg). The logo remains the property of KMD.
